@@ -1,0 +1,10 @@
+/* Hero Image */
+.hero-image {
+    position: relative;
+}
+
+.header {
+    position: absolute;
+    top: 100px;
+    right: 80px;
+}
