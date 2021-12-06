@@ -1,5 +1,19 @@
+/* Main body design */
 body {
     margin: 15px !important;
+}
+
+body p {
+    font-family: 'Raleway', sans-serif;
+}
+
+body h1,h2,h3 {
+    font-family: 'Handlee', cursive;
+    color: #967950
+}
+
+body h4,h5,h6 {
+    font-family: 'Raleway', sans-serif;
 }
 
 /* Hero Image */
@@ -12,6 +26,7 @@ body {
     max-width: 180px;
     max-height: 50px;
     text-align: center;
+    padding: 5px;
     top: 70px;
     right: 15px;
 }
@@ -30,4 +45,13 @@ body {
     top: 254px;
     right: 25px;
     font-size: 0.5em;
+}
+
+/* Customer Reviews */
+.blockquote {
+    text-align: center;
+}
+
+.fa-star {
+    color: #967950
 }
