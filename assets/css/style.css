@@ -57,6 +57,10 @@ body h4,h5,h6 {
     text-align: center;
 }
 
+.blockquote p {
+    font-size: 0.8em !important;
+}
+
 .fa-star {
     color: #967950
 }
