@@ -10,6 +10,7 @@ body p {
 body h1,h2,h3 {
     font-family: 'Handlee', cursive !important;
     color: #967950;
+    text-align: center;
 }
 
 body h4,h5,h6 {
@@ -64,3 +65,4 @@ body h4,h5,h6 {
 .fa-star {
     color: #967950
 }
+
