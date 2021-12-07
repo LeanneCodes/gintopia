@@ -24,6 +24,11 @@ body h4,h5,h6 {
     color: #967950 !important;
 }
 
+.sign-up {
+    padding: 0px !important;
+    color: #967950 !important;
+}
+
 /* Hero Image */
 .card-title {
     font-family: 'Handlee', cursive !important;
@@ -66,3 +71,202 @@ body h4,h5,h6 {
     color: #967950
 }
 
+/* for 4k screens size from 2560px wide and down */
+@media screen and (max-width: 2560px) {
+    .card-title {
+        font-size: 6em;
+    }
+    
+    .card-text {
+        font-size: 4em !important;
+    }
+    
+    .card-img-overlay button {
+        font-size: 2.5em;
+    }
+
+    .card-img-overlay {
+        top: 30% !important;
+    }
+    
+    .text-muted {
+        font-size: 2em !important;
+    }
+}
+
+/* for larger screens size from 1920px wide and down */
+@media screen and (max-width: 1920px) {
+    .card-title {
+        font-size: 4em;
+    }
+    
+    .card-text {
+        font-size: 3em !important;
+    }
+    
+    .card-img-overlay button {
+        font-size: 2em;
+    }
+
+    .card-img-overlay {
+        top: 30% !important;
+    }
+    
+    .text-muted {
+        font-size: 1.5em !important;
+    }
+}
+
+/* for larger screens size from 1440px wide and down */
+@media screen and (max-width: 1440px) {
+    .card-title {
+        font-size: 3.5em;
+    }
+    
+    .card-text {
+        font-size: 2.3em !important;
+    }
+    
+    .card-img-overlay button {
+        font-size: 1.5em;
+    }
+
+    .card-img-overlay {
+        top: 30% !important;
+    }
+    
+    .text-muted {
+        font-size: 1.2em !important;
+    }
+}
+
+/* for larger to medium screens size from 1366px wide and down */
+@media screen and (max-width: 1366px) {
+    .card-text {
+        font-size: 2em !important;
+    }
+
+    .text-muted {
+        font-size: 1.2em !important;
+    }
+}
+
+/* for medium screens size from 1280px wide and down */
+@media screen and (max-width: 1280px) {
+    
+}
+
+/* for larger to medium screens size from 1024px wide and down */
+@media screen and (max-width: 1024px) {
+    .card-title {
+        font-size: 3em;
+    }
+    
+    .card-text {
+        font-size: 1.8em !important;
+    }
+    
+    .card-img-overlay button {
+        font-size: 1.2em;
+    }
+
+    .card-img-overlay {
+        top: 20% !important;
+    }
+    
+    .text-muted {
+        font-size: 1em !important;
+    }
+}
+
+/* for small to medium screens size from 768px wide and down */
+@media screen and (max-width: 768px) {
+    .card-title {
+        font-size: 2.5em;
+    }
+    
+    .card-text {
+        font-size: 1.3em !important;
+    }
+    
+    .card-img-overlay button {
+        font-size: 1em;
+    }
+
+    .card-img-overlay {
+        top: 20% !important;
+    }
+    
+    .text-muted {
+        font-size: 0.8em !important;
+    }
+}
+
+/* for small screens size from 575px wide and down */
+@media screen and (max-width: 575px) {
+    .card-title {
+        font-size: 2em;
+    }
+    
+    .card-text {
+        font-size: 1em !important;
+    }
+    
+    .card-img-overlay button {
+        font-size: 0.8em;
+    }
+
+    .card-img-overlay {
+        top: 20% !important;
+    }
+    
+    .text-muted {
+        font-size: 0.5em !important;
+    }
+}
+
+/* for small screens size from 425px wide and down */
+@media screen and (max-width: 425px) {
+    .card-title {
+        font-size: 1.5em;
+    }
+    
+    .card-text {
+        font-size: 0.8em !important;
+    }
+    
+    .card-img-overlay button {
+        font-size: 0.5em;
+    }
+
+    .card-img-overlay {
+        top: 15% !important;
+    }
+    
+    .text-muted {
+        font-size: 0.4em !important;
+    }
+}
+
+/* for small screens size from 390px wide and down */
+@media screen and (max-width: 390px) {
+    .card-title {
+        font-size: 1.3em;
+    }
+    
+    .card-text {
+        font-size: 0.7em !important;
+    }
+    
+    .card-img-overlay button {
+        font-size: 0.5em;
+    }
+
+    .card-img-overlay {
+        top: 15% !important;
+    }
+
+    .text-muted {
+        font-size: 0.4em !important;
+    }
+}
