@@ -8,43 +8,48 @@ body p {
 }
 
 body h1,h2,h3 {
-    font-family: 'Handlee', cursive;
-    color: #967950
+    font-family: 'Handlee', cursive !important;
+    color: #967950;
 }
 
 body h4,h5,h6 {
     font-family: 'Raleway', sans-serif;
 }
 
+/* Navbar */
+.navbar-brand {
+    font-family: 'Handlee', cursive;
+    font-size: 2em !important;
+    color: #967950 !important;
+}
+
 /* Hero Image */
-.hero-image {
-    position: relative;
+.card-title {
+    font-family: 'Handlee', cursive !important;
+    color: #967950;
 }
 
-#homepage-cta {
-    position: absolute;
-    max-width: 180px;
-    max-height: 50px;
+.card-text {
+    font-size: 0.8em !important;
+}
+
+.card-img-overlay {
     text-align: center;
-    padding: 5px;
-    top: 70px;
-    right: 15px;
-}
-
-#homepage-cta h3 {
-    color: #967950
-}
-
-#homepage-cta p {
-    font-size: 0.8em;
-    color: white
+    position: absolute;
+    top: 15% !important;
+    left: 55% !important;
+    width: 43% !important;
+    padding: 1rem;
+    border-radius: calc(.25rem - 1px);
 }
 
 .text-muted {
+    text-align: right;
     position: absolute;
-    top: 254px;
-    right: 25px;
-    font-size: 0.5em;
+    bottom: 2% !important;
+    width: 130% !important;
+    right: 1% !important;
+    font-size: 0.5em !important;
 }
 
 /* Customer Reviews */
