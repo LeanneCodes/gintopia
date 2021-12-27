@@ -113,6 +113,34 @@ body h4,h5,h6 {
     font-size: 2.5em;
 }
 
+/* Book a Class */
+.bartenders {
+    display: flex;
+    justify-content: space-between;
+}
+
+.circle {
+    border-radius: 50%;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    border: 1px whitesmoke;
+    box-shadow: 0px 0px 5px 10px whitesmoke !important;
+}
+
+.bartender-intro {
+    background-color:#9eb273;
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.bartender-intro h3 {
+    color: white !important;
+    margin-top: 10px;
+}
+
 /* for 4k screens size from 2560px wide and down */
 @media screen and (max-width: 2560px) {
     .card-title {
@@ -195,7 +223,9 @@ body h4,h5,h6 {
 
 /* for medium screens size from 1280px wide and down */
 @media screen and (max-width: 1280px) {
-    
+    .bartenders {
+        flex-wrap: wrap;
+    }
 }
 
 /* for larger to medium screens size from 1024px wide and down */
