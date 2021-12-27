@@ -32,30 +32,37 @@ body h4,h5,h6 {
 /* Hero Image */
 .card-title {
     font-family: 'Handlee', cursive !important;
-    color: #967950;
+    color: whitesmoke !important;
+    font-size: 4em;
 }
 
 .card-text {
-    font-size: 0.8em !important;
+    font-size: 2em !important;
+}
+
+.card-img {
+    width: 100% !important;
+    height: auto;
 }
 
 .card-img-overlay {
     text-align: center;
     position: absolute;
-    top: 15% !important;
-    left: 55% !important;
-    width: 43% !important;
+    top: 25% !important;
+    left: 27% !important;
+    width: 100% !important;
     padding: 1rem;
     border-radius: calc(.25rem - 1px);
 }
 
-.text-muted {
+.disclaimer {
     text-align: right;
     position: absolute;
-    bottom: 2% !important;
-    width: 130% !important;
-    right: 1% !important;
-    font-size: 0.5em !important;
+    bottom: 40% !important;
+    width: 45% !important;
+    right: 28%;
+    font-size: 1.2em !important;
+    color: white;
 }
 
 /* Reviews */
@@ -148,58 +155,17 @@ body h4,h5,h6 {
 
 /* for 4k screens size from 2560px wide and down */
 @media screen and (max-width: 2560px) {
-    .card-title {
-        font-size: 6em;
-    }
     
-    .card-text {
-        font-size: 4em !important;
-    }
-    
-    .card-img-overlay button {
-        font-size: 2.5em;
-    }
-
-    .card-img-overlay {
-        top: 30% !important;
-    }
-    
-    .text-muted {
-        font-size: 2em !important;
-    }
 }
 
 /* for larger screens size from 1920px wide and down */
 @media screen and (max-width: 1920px) {
     .card-title {
-        font-size: 4em;
+        font-size: 3em;
     }
     
     .card-text {
-        font-size: 3em !important;
-    }
-    
-    .card-img-overlay button {
-        font-size: 2em;
-    }
-
-    .card-img-overlay {
-        top: 30% !important;
-    }
-    
-    .text-muted {
-        font-size: 1.5em !important;
-    }
-}
-
-/* for larger screens size from 1440px wide and down */
-@media screen and (max-width: 1440px) {
-    .card-title {
-        font-size: 3.5em;
-    }
-    
-    .card-text {
-        font-size: 2.3em !important;
+        font-size: 1.8em !important;
     }
     
     .card-img-overlay button {
@@ -207,11 +173,40 @@ body h4,h5,h6 {
     }
 
     .card-img-overlay {
-        top: 30% !important;
+        top: 25% !important;
+        left: 27% !important;
     }
     
-    .text-muted {
+    .disclaimer {
         font-size: 1.2em !important;
+        bottom: 48% !important;
+        right: 28%;
+    }
+}
+
+/* for larger screens size from 1440px wide and down */
+@media screen and (max-width: 1440px) {
+    .card-title {
+        font-size: 3em;
+    }
+    
+    .card-text {
+        font-size: 1.2em !important;
+    }
+    
+    .card-img-overlay button {
+        font-size: 1.5em;
+    }
+
+    .card-img-overlay {
+        top: 22% !important;
+        left: 27% !important;
+    }
+    
+    .disclaimer {
+        font-size: 1em !important;
+        bottom: 65% !important;
+        right: 29%;
     }
 }
 
@@ -221,7 +216,7 @@ body h4,h5,h6 {
         font-size: 2em !important;
     }
 
-    .text-muted {
+    .disclaimer {
         font-size: 1.2em !important;
     }
 }
@@ -252,7 +247,7 @@ body h4,h5,h6 {
         top: 20% !important;
     }
     
-    .text-muted {
+    .disclaimer {
         font-size: 1em !important;
     }
 
@@ -279,7 +274,7 @@ body h4,h5,h6 {
         top: 20% !important;
     }
     
-    .text-muted {
+    .disclaimer {
         font-size: 0.8em !important;
     }
 
@@ -307,7 +302,7 @@ body h4,h5,h6 {
         top: 20% !important;
     }
     
-    .text-muted {
+    .disclaimer {
         font-size: 0.5em !important;
     }
 }
@@ -330,7 +325,7 @@ body h4,h5,h6 {
         top: 15% !important;
     }
     
-    .text-muted {
+    .disclaimer {
         font-size: 0.4em !important;
     }
 
@@ -358,7 +353,7 @@ body h4,h5,h6 {
         top: 15% !important;
     }
 
-    .text-muted {
+    .disclaimer {
         font-size: 0.4em !important;
     }
 }
