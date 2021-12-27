@@ -76,13 +76,28 @@ body h4,h5,h6 {
 }
 
 /* All About Gin */
-.gin-facts {
-    margin-left: 10%;
-    margin-right: 10%;
+.quick-facts {
+    background-color: #9eb273;
+    color: white;
+    text-align: center;
 }
 
-.fa-lightbulb {
-    font-size: 2em;
+.quick-facts p {
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#experts {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+.fa-cocktail {
+    font-size: 1.5em;
+    color: whitesmoke;
+    margin-top: 10px;
 }
 
 .gin-rank {
