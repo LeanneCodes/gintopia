@@ -115,7 +115,8 @@ body h4,h5,h6 {
 
 /* Book a Class */
 .bartenders {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
     justify-content: space-between;
 }
 
@@ -133,12 +134,16 @@ body h4,h5,h6 {
     background-color:#9eb273;
     color: white;
     text-align: center;
-    padding: 10px 0px;
+    padding: 10px 60px;
 }
 
 .bartender-intro h3 {
     color: white !important;
     margin-top: 10px;
+}
+
+.bartender-info {
+    padding-top: 20px;
 }
 
 /* for 4k screens size from 2560px wide and down */
@@ -224,7 +229,8 @@ body h4,h5,h6 {
 /* for medium screens size from 1280px wide and down */
 @media screen and (max-width: 1280px) {
     .bartenders {
-        flex-wrap: wrap;
+        grid-template-columns: auto auto auto;
+        justify-content: space-evenly;
     }
 }
 
@@ -249,10 +255,14 @@ body h4,h5,h6 {
     .text-muted {
         font-size: 1em !important;
     }
+
+    .bartender {
+        justify-content: space-between;
+    }
 }
 
-/* for small to medium screens size from 768px wide and down */
-@media screen and (max-width: 768px) {
+/* for small to medium screens size from 800px wide and down */
+@media screen and (max-width: 800px) {
     .card-title {
         font-size: 2.5em;
     }
@@ -271,6 +281,11 @@ body h4,h5,h6 {
     
     .text-muted {
         font-size: 0.8em !important;
+    }
+
+    .bartenders {
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
     }
 }
 
@@ -317,6 +332,11 @@ body h4,h5,h6 {
     
     .text-muted {
         font-size: 0.4em !important;
+    }
+
+    .bartenders {
+        grid-template-columns: auto;
+        justify-content: space-evenly;
     }
 }
 
