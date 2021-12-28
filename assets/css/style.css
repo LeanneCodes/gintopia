@@ -257,7 +257,13 @@ body h4,h5,h6 {
 
 /* for 4k screens size from 2560px wide and down */
 @media screen and (max-width: 2560px) {
-    
+    #flex-gallery {
+        display: block;
+    }
+
+    #slideshow {
+        display: none;
+    }
 }
 
 /* for larger screens size from 1920px wide and down */
@@ -295,6 +301,14 @@ body h4,h5,h6 {
     .bartenders {
         grid-template-columns: auto auto;
         justify-content: space-evenly;
+    }
+
+    #flex-gallery {
+        display: none;
+    }
+
+    #slideshow {
+        display: block;
     }
 }
 
