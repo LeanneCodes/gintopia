@@ -68,22 +68,6 @@ body h4,h5,h6 {
     font-size: 1em !important;
 }
 
-/* Block dividers */
-
-.block-divider {
-    width: 500px;
-    border: 0;
-    background-color: #444;
-}
-
-.block-divider--green {
-    background-color: #9eb273;
-}
-
-.block-divider--green hr {
-    height: 5px !important;
-}
-
 /* Reviews */
 .blockquote {
     text-align: center;
@@ -101,9 +85,103 @@ body h4,h5,h6 {
     margin: 20px 20px 0px;
 }
 
+/* Gallery */
+.gin-gallery-container {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-auto-rows: 100px 300px;
+    grid-gap: 10px;
+}
+
+.gallery-items {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.gallery-items .gin-image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gallery-items .gin-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.gallery-items:hover .gin-image img{
+    transform: scale(1.5);
+}
+
+.w-1 {
+    grid-column: span 1;
+}
+
+.w-2 {
+    grid-column: span 2;
+}
+
+.w-3 {
+    grid-column: span 3;
+}
+
+.w-4 {
+    grid-column: span 4;
+}
+
+.w-5 {
+    grid-column: span 5;
+}
+
+.w-6 {
+    grid-column: span 6;
+}
+
+.h-1 {
+    grid-row: span 1;
+}
+
+.h-2 {
+    grid-row: span 2;
+}
+
+.h-3 {
+    grid-row: span 3;
+}
+
+.h-4 {
+    grid-row: span 4;
+}
+
+.h-5 {
+    grid-row: span 5;
+}
+
+.h-6 {
+    grid-row: span 6;
+}
+
+@keyframes move-down{
+
+    0% {
+        top: 10%;
+    }
+    50% {
+        top: 35%;
+    }
+    100% {
+        top: 50%;
+    }
+}
+
 /* All About Gin */
 .quick-facts {
-    background-color: #9eb273;
+    background-color: hsl(141, 23%, 33%);
     color: white;
     text-align: center;
 }
