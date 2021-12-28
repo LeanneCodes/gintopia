@@ -46,13 +46,17 @@ body h4,h5,h6 {
 
 .card {
     position: absolute !important;
+    text-align: center;
     top: 30% !important;
     left: 54%;
-    width: max-content;
+    width: fit-content;
     padding: 1rem;
-    border-radius: calc(.25rem - 1px);
     border-color: rgba(0, 0, 0, 0) !important;
     background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.disclaimer {
+    color: whitesmoke;
 }
 
 /* Reviews */
@@ -145,38 +149,79 @@ body h4,h5,h6 {
 
 /* for 4k screens size from 2560px wide and down */
 @media screen and (max-width: 2560px) {
+    .card-title {
+        font-size: 4.5em;
+    }
     
+    .card-text {
+        font-size: 2em !important;
+    }
+    
+    .card {
+        top: 30% !important;
+        left: 57%;
+    }
+
+    .cta-btn {
+        font-size: 1.5em !important;
+    }
+
+    .disclaimer {
+        font-size: 1.2em !important;
+    }
 }
 
 /* for larger screens size from 1920px wide and down */
 @media screen and (max-width: 1920px) {
     .card-title {
-        font-size: 3em;
+        font-size: 4em;
     }
     
     .card-text {
-        font-size: 1.8em !important;
+        font-size: 1.5em !important;
     }
     
-    .card-img-overlay button {
-        font-size: 1.5em;
+    .card {
+        top: 30% !important;
+        left: 57%;
     }
 
-    .card-img-overlay {
-        top: 32% !important;
-        left: 27% !important;
+    .cta-btn {
+        font-size: 1em !important;
     }
-    
+
     .disclaimer {
-        font-size: 1.2em !important;
-        bottom: 18% !important;
-        right: 28%;
+        font-size: 1em !important;
     }
 }
 
 /* for larger screens size from 1440px wide and down */
 @media screen and (max-width: 1440px) {
     .card-title {
+        font-size: 3.5em;
+    }
+    
+    .card-text {
+        font-size: 1.2em !important;
+    }
+    
+    .card {
+        top: 25% !important;
+        left: 55%;
+    }
+
+    .cta-btn {
+        font-size: 0.8em !important;
+    }
+
+    .disclaimer {
+        font-size: 0.8em !important;
+    }
+}
+
+/* for larger to medium screens size from 1366px wide and down */
+@media screen and (max-width: 1366px) {
+    .card-title {
         font-size: 3em;
     }
     
@@ -184,30 +229,17 @@ body h4,h5,h6 {
         font-size: 1.2em !important;
     }
     
-    .card-img-overlay button {
-        font-size: 1.5em;
+    .card {
+        top: 25% !important;
+        left: 55%;
     }
 
-    .card-img-overlay {
-        top: 22% !important;
-        left: 27% !important;
-    }
-    
-    .disclaimer {
-        font-size: 1em !important;
-        bottom: 65% !important;
-        right: 29%;
-    }
-}
-
-/* for larger to medium screens size from 1366px wide and down */
-@media screen and (max-width: 1366px) {
-    .card-text {
-        font-size: 2em !important;
+    .cta-btn {
+        font-size: 0.8em !important;
     }
 
     .disclaimer {
-        font-size: 1.2em !important;
+        font-size: 0.6em !important;
     }
 }
 
@@ -217,133 +249,210 @@ body h4,h5,h6 {
         grid-template-columns: auto auto auto;
         justify-content: space-evenly;
     }
+
+    .card-title {
+        font-size: 2.7em;
+    }
+    
+    .card-text {
+        font-size: 1em !important;
+    }
+    
+    .card {
+        top: 25% !important;
+        left: 55%;
+    }
+
+    .cta-btn {
+        font-size: 0.8em !important;
+    }
+
+    .disclaimer {
+        font-size: 0.6em !important;
+    }
 }
 
 /* for larger to medium screens size from 1024px wide and down */
 @media screen and (max-width: 1024px) {
+    .bartender {
+        justify-content: space-between;
+    }
+
     .card-title {
-        font-size: 3em;
+        font-size: 2.4em;
     }
     
     .card-text {
-        font-size: 1.8em !important;
+        font-size: 0.9em !important;
     }
     
-    .card-img-overlay button {
-        font-size: 1.2em;
-    }
-
-    .card-img-overlay {
+    .card {
         top: 20% !important;
-    }
-    
-    .disclaimer {
-        font-size: 1em !important;
+        left: 53%;
     }
 
-    .bartender {
-        justify-content: space-between;
+    .cta-btn {
+        font-size: 0.8em !important;
+    }
+
+    .disclaimer {
+        font-size: 0.6em !important;
     }
 }
 
 /* for small to medium screens size from 800px wide and down */
 @media screen and (max-width: 800px) {
-    .card-title {
-        font-size: 2.5em;
-    }
-    
-    .card-text {
-        font-size: 1.3em !important;
-    }
-    
-    .card-img-overlay button {
-        font-size: 1em;
-    }
-
-    .card-img-overlay {
-        top: 20% !important;
-    }
-    
-    .disclaimer {
-        font-size: 0.8em !important;
-    }
-
     .bartenders {
         grid-template-columns: auto auto;
         justify-content: space-evenly;
+    }
+
+    .card-title {
+        font-size: 2em;
+    }
+    
+    .card-text {
+        font-size: 0.9em !important;
+    }
+    
+    .card {
+        top: 13% !important;
+        left: 53%;
+        width: 45%;
+    }
+
+    .cta-btn {
+        font-size: 0.6em !important;
+    }
+
+    .disclaimer {
+        font-size: 0.6em !important;
     }
 }
 
 /* for small screens size from 575px wide and down */
 @media screen and (max-width: 575px) {
     .card-title {
-        font-size: 2em;
-    }
-    
-    .card-text {
-        font-size: 1em !important;
-    }
-    
-    .card-img-overlay button {
-        font-size: 0.8em;
-    }
-
-    .card-img-overlay {
-        top: 20% !important;
-    }
-    
-    .disclaimer {
-        font-size: 0.5em !important;
-    }
-}
-
-/* for small screens size from 425px wide and down */
-@media screen and (max-width: 425px) {
-    .card-title {
-        font-size: 1.5em;
-    }
-    
-    .card-text {
-        font-size: 0.8em !important;
-    }
-    
-    .card-img-overlay button {
-        font-size: 0.5em;
-    }
-
-    .card-img-overlay {
-        top: 15% !important;
-    }
-    
-    .disclaimer {
-        font-size: 0.4em !important;
-    }
-
-    .bartenders {
-        grid-template-columns: auto;
-        justify-content: space-evenly;
-    }
-}
-
-/* for small screens size from 390px wide and down */
-@media screen and (max-width: 390px) {
-    .card-title {
-        font-size: 1.3em;
+        font-size: 1.6em;
     }
     
     .card-text {
         font-size: 0.7em !important;
     }
     
-    .card-img-overlay button {
-        font-size: 0.5em;
+    .card {
+        top: 10% !important;
+        left: 52%;
+        width: 45%;
     }
 
-    .card-img-overlay {
-        top: 15% !important;
+    .cta-btn {
+        font-size: 0.6em !important;
+    }
+
+    .disclaimer {
+        font-size: 0.6em !important;
+    }
+}
+
+/* for small screens size from 425px wide and down */
+@media screen and (max-width: 425px) {
+    .bartenders {
+        grid-template-columns: auto;
+        justify-content: space-evenly;
+    }
+
+    .card-title {
+        font-size: 1em;
+        color: #967950 !important;
+    }
+    
+    .card-text {
+        font-size: 0.65em !important;
+        margin-bottom: 2px;
+    }
+    
+    .card {
+        top: 9% !important;
+        left: 50%;
+        width: 47%;
+    }
+
+    .card-body {
+        padding: 4px !important;
+    }
+
+    .cta-btn {
+        font-size: 0.5em !important;
+    }
+
+    .disclaimer {
+        font-size: 0.5em !important;
+    }
+}
+
+/* for small screens size from 390px wide and down */
+@media screen and (max-width: 390px) {
+    .card-title {
+        font-size: 0.8em;
+        color: #967950 !important;
+    }
+    
+    .card-text {
+        font-size: 0.6em !important;
+        margin-bottom: 2px;
+    }
+    
+    .card {
+        top: 9% !important;
+        left: 50%;
+        width: 47%;
+    }
+
+    .card-body {
+        padding: 4px !important;
+    }
+
+    .cta-btn {
+        font-size: 0.4em !important;
     }
 
     .disclaimer {
         font-size: 0.4em !important;
+    }
+}
+
+/* for small screens size from 320px wide and down */
+@media screen and (max-width: 320px) {
+    .card-title {
+        font-size: 0.8em;
+        color: #967950 !important;
+    }
+    
+    .card-text {
+        font-size: 0.5em !important;
+    }
+    
+    .card {
+        top: 8% !important;
+        left: 49%;
+        width: 50%;
+    }
+
+    .card-body {
+        padding: 4px !important;
+    }
+
+    .card p {
+        margin-bottom: 0px !important;
+    }
+
+    .cta-btn {
+        font-size: 0.35em !important;
+    }
+
+    .disclaimer {
+        font-size: 0.4em !important;
+        width: 100%;
     }
 }
