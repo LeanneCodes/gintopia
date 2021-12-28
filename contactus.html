@@ -16,6 +16,15 @@
       @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
     </style>
+    <!-- Emailjs -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init("user_OAwOOo2rDsu6jWBOML5qZ");
+      })();
+    </script>
 </head>
 <body>
     <!-- Navbar -->
@@ -58,11 +67,10 @@
           <div class="col">
             <h3>Need some help?</h3>
             <h6 class="text-center">Send us an email today!</h6>
-            <br>
             <div class="center-form">
-                <form>
+                <form onsubmit ="return sendMail(this);"> 
                     <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
-                    <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required />
+                    <input type="email" name="emailaddress" id="emailaddress" class="form-control" placeholder="Email" required />
                     <textarea rows="5" name="ginbooking" id="ginbooking" class="form-control" placeholder="Gin Class Enquiry" required></textarea>
                     <br>
                     <div class="form-row text-center">
@@ -126,6 +134,7 @@
       </footer>
     </section>
     <!-- /.footer -->
+    <script src="assets/js/sendEmail.js"></script>
     <!-- font awesome script -->
     <script src="https://kit.fontawesome.com/eaf248fb94.js" crossorigin="anonymous"></script>
     <!-- Bootstrap Bundles -->
