@@ -147,6 +147,11 @@ body h4,h5,h6 {
     padding-top: 20px;
 }
 
+/* Google Map */
+#map {
+    min-height: 360px;
+}
+
 /* for 4k screens size from 2560px wide and down */
 @media screen and (max-width: 2560px) {
     .card-title {

@@ -76,11 +76,10 @@
       </div>
     </section>
     <!-- /.contact us -->
+    <hr>
     <!-- Google Map -->
     <section>
-      <div id="map">
-
-      </div>
+      <div id="map"></div>
     </section>
     <!-- /.google map -->
     <hr>
@@ -127,5 +126,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     <!-- Google Maps API -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMptgYoxpwQ5ZA-ztcsITFsTN3AGATTSM&callback=initMap&v=weekly" async></script>
+    <script>
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 3,
+          center: {
+            lat: 51.5073219,
+            lng: -0.1276474
+          }
+        });
+      }
+    </script>
 </body>
 </html>
