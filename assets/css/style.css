@@ -30,33 +30,58 @@ body h4,h5,h6 {
 }
 
 /* Hero Image */
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.callout-container {
+    height: 100vh;
+
+    background: url('../images/orange-gin.jpg') no-repeat center center fixed;
+    opacity: 0.9;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
 .card-title {
     font-family: 'Handlee', cursive !important;
-    color: whitesmoke !important;
-    font-size: 4em;
+    color: white !important;
+    font-size: 4em !important;
 }
 
 .card-text {
     font-size: 2em !important;
-}
-
-#hero-image {
-    position: relative;
-}
-
-.card {
-    position: absolute !important;
-    text-align: center;
-    top: 30% !important;
-    left: 54%;
-    width: fit-content;
-    padding: 1rem;
-    border-color: rgba(0, 0, 0, 0) !important;
-    background-color: rgba(0, 0, 0, 0) !important;
+    color: white !important;
 }
 
 .disclaimer {
     color: whitesmoke;
+    font-size: 1em !important;
+}
+
+/* Block dividers */
+
+.block-divider {
+    width: 500px;
+    border: 0;
+    background-color: #444;
+}
+
+.block-divider--green {
+    background-color: #9eb273;
+}
+
+.block-divider--green hr {
+    height: 5px !important;
 }
 
 /* Reviews */
@@ -132,7 +157,7 @@ body h4,h5,h6 {
 }
 
 .bartender-intro {
-    background-color:#9eb273;
+    background-color:hsl(141, 23%, 33%);
     color: white;
     text-align: center;
     padding: 10px 60px;
@@ -154,98 +179,22 @@ body h4,h5,h6 {
 
 /* for 4k screens size from 2560px wide and down */
 @media screen and (max-width: 2560px) {
-    .card-title {
-        font-size: 4.5em;
-    }
     
-    .card-text {
-        font-size: 2em !important;
-    }
-    
-    .card {
-        top: 30% !important;
-        left: 57%;
-    }
-
-    .cta-btn {
-        font-size: 1.5em !important;
-    }
-
-    .disclaimer {
-        font-size: 1.2em !important;
-    }
 }
 
 /* for larger screens size from 1920px wide and down */
 @media screen and (max-width: 1920px) {
-    .card-title {
-        font-size: 4em;
-    }
     
-    .card-text {
-        font-size: 1.5em !important;
-    }
-    
-    .card {
-        top: 30% !important;
-        left: 57%;
-    }
-
-    .cta-btn {
-        font-size: 1em !important;
-    }
-
-    .disclaimer {
-        font-size: 1em !important;
-    }
 }
 
 /* for larger screens size from 1440px wide and down */
 @media screen and (max-width: 1440px) {
-    .card-title {
-        font-size: 3.5em;
-    }
-    
-    .card-text {
-        font-size: 1.2em !important;
-    }
-    
-    .card {
-        top: 25% !important;
-        left: 55%;
-    }
-
-    .cta-btn {
-        font-size: 0.8em !important;
-    }
-
-    .disclaimer {
-        font-size: 0.8em !important;
-    }
+   
 }
 
 /* for larger to medium screens size from 1366px wide and down */
 @media screen and (max-width: 1366px) {
-    .card-title {
-        font-size: 3em;
-    }
     
-    .card-text {
-        font-size: 1.2em !important;
-    }
-    
-    .card {
-        top: 25% !important;
-        left: 55%;
-    }
-
-    .cta-btn {
-        font-size: 0.8em !important;
-    }
-
-    .disclaimer {
-        font-size: 0.6em !important;
-    }
 }
 
 /* for medium screens size from 1280px wide and down */
@@ -254,54 +203,12 @@ body h4,h5,h6 {
         grid-template-columns: auto auto auto;
         justify-content: space-evenly;
     }
-
-    .card-title {
-        font-size: 2.7em;
-    }
-    
-    .card-text {
-        font-size: 1em !important;
-    }
-    
-    .card {
-        top: 25% !important;
-        left: 55%;
-    }
-
-    .cta-btn {
-        font-size: 0.8em !important;
-    }
-
-    .disclaimer {
-        font-size: 0.6em !important;
-    }
 }
 
 /* for larger to medium screens size from 1024px wide and down */
 @media screen and (max-width: 1024px) {
     .bartender {
         justify-content: space-between;
-    }
-
-    .card-title {
-        font-size: 2.4em;
-    }
-    
-    .card-text {
-        font-size: 0.9em !important;
-    }
-    
-    .card {
-        top: 20% !important;
-        left: 53%;
-    }
-
-    .cta-btn {
-        font-size: 0.8em !important;
-    }
-
-    .disclaimer {
-        font-size: 0.6em !important;
     }
 }
 
@@ -311,53 +218,11 @@ body h4,h5,h6 {
         grid-template-columns: auto auto;
         justify-content: space-evenly;
     }
-
-    .card-title {
-        font-size: 2em;
-    }
-    
-    .card-text {
-        font-size: 0.9em !important;
-    }
-    
-    .card {
-        top: 13% !important;
-        left: 53%;
-        width: 45%;
-    }
-
-    .cta-btn {
-        font-size: 0.6em !important;
-    }
-
-    .disclaimer {
-        font-size: 0.6em !important;
-    }
 }
 
 /* for small screens size from 575px wide and down */
 @media screen and (max-width: 575px) {
-    .card-title {
-        font-size: 1.6em;
-    }
     
-    .card-text {
-        font-size: 0.7em !important;
-    }
-    
-    .card {
-        top: 10% !important;
-        left: 52%;
-        width: 45%;
-    }
-
-    .cta-btn {
-        font-size: 0.6em !important;
-    }
-
-    .disclaimer {
-        font-size: 0.6em !important;
-    }
 }
 
 /* for small screens size from 425px wide and down */
@@ -366,98 +231,14 @@ body h4,h5,h6 {
         grid-template-columns: auto;
         justify-content: space-evenly;
     }
-
-    .card-title {
-        font-size: 1em;
-        color: #967950 !important;
-    }
-    
-    .card-text {
-        font-size: 0.65em !important;
-        margin-bottom: 2px;
-    }
-    
-    .card {
-        top: 9% !important;
-        left: 50%;
-        width: 47%;
-    }
-
-    .card-body {
-        padding: 4px !important;
-    }
-
-    .cta-btn {
-        font-size: 0.5em !important;
-    }
-
-    .disclaimer {
-        font-size: 0.5em !important;
-    }
 }
 
 /* for small screens size from 390px wide and down */
 @media screen and (max-width: 390px) {
-    .card-title {
-        font-size: 0.8em;
-        color: #967950 !important;
-    }
     
-    .card-text {
-        font-size: 0.6em !important;
-        margin-bottom: 2px;
-    }
-    
-    .card {
-        top: 9% !important;
-        left: 50%;
-        width: 47%;
-    }
-
-    .card-body {
-        padding: 4px !important;
-    }
-
-    .cta-btn {
-        font-size: 0.4em !important;
-    }
-
-    .disclaimer {
-        font-size: 0.4em !important;
-    }
 }
 
 /* for small screens size from 320px wide and down */
 @media screen and (max-width: 320px) {
-    .card-title {
-        font-size: 0.8em;
-        color: #967950 !important;
-    }
     
-    .card-text {
-        font-size: 0.5em !important;
-    }
-    
-    .card {
-        top: 8% !important;
-        left: 49%;
-        width: 50%;
-    }
-
-    .card-body {
-        padding: 4px !important;
-    }
-
-    .card p {
-        margin-bottom: 0px !important;
-    }
-
-    .cta-btn {
-        font-size: 0.35em !important;
-    }
-
-    .disclaimer {
-        font-size: 0.4em !important;
-        width: 100%;
-    }
 }
