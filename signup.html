@@ -46,13 +46,48 @@
     </nav>
     <!-- /.navbar -->
     <hr>
-    <h2>GinTopians Welcome</h2>
     <!-- Sign Up/Sign In -->
-    <section class="signup-container">
+    <section id="gintopia-signup">
+      <div class="container-su" id="containersu">
+        <div class="form-container-su sign-up-container-su">
+          <form class="form-signup" action="#">
+            <h1>Create Account</h1>
+            <input class="input-signup" type="text" placeholder="Name" required/>
+            <input class="input-signup" type="email" placeholder="Email" required/>
+            <input class="input-signup" type="password" placeholder="Password" required/>
+            <button class="button-signup">Sign Up</button>
+          </form>
+        </div>
+        <div class="form-container-su sign-in-container-su">
+          <form class="form-signup" action="#">
+            <h1>Sign in</h1>
+            <input class="input-signup" type="email" placeholder="Email" required/>
+            <input class="input-signup" type="password" placeholder="Password" required/>
+            <button class="button-signup">Sign In</button>
+          </form>
+        </div>
+        <div class="overlay-container-su">
+          <div class="overlay-su">
+            <div class="overlay-panel-su overlay-left-su">
+              <h1>Welcome Back!</h1>
+              <p>To keep connected with us please login with your personal info</p>
+              <button class="button-signup" class="ghost" id="signIn">Sign In</button>
+            </div>
+            <div class="overlay-panel-su overlay-right-su">
+              <h1>Hello, Friend!</h1>
+              <p>Enter your personal details and start journey with us</p>
+              <button class="button-signup" class="ghost" id="signUp">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+    <!-- Sign Up/Sign In -->
+    <!--<section class="signup-container">
       <div class="signup">
         <h4>New GinTopians Register Here</h4>
         <div class="container">
-          <form action="index.php" method="post">
+          <form action="index.php">
             <div class="mb-3">
               <label for="fname" class="form-label">First Name</label>
               <input type="text" name="name" class="form-control" placeholder="Jane" required>
@@ -78,7 +113,7 @@
       <div class="login">
         <h4>Existing GinTopians Sign In Here</h4>
         <div class="container">
-          <form action="index.php" method="post">
+          <form action="index.php">
             <div class="mb-3">
               <label for="email" class="form-label">Email address</label>
               <input type="email" name="email" class="form-control" placeholder="jane@doe.com" required>
@@ -93,15 +128,15 @@
           <p>No Account?<br><a class="register" href="assets/php/register.php">Register Instead</a></p>
         </div>
       </div>
-    </section>
+    </section>-->
     <!-- /.sign up/sign in -->
     <hr>
     <!-- Bottom Image -->
-    <section>
+    <!--<section>
       <div>
         <img class="signup-gin img-fluid" src="assets/images/blogger-gin.png" alt="gin-photo">
       </div>
-    </section>
+    </section>-->
     <!-- /.bottom image -->
     <hr>
     <!-- Footer -->
@@ -145,5 +180,6 @@
     <!-- Bootstrap Bundles -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="assets/js/signUp.js"></script>
 </body>
 </html>
