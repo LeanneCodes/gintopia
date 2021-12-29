@@ -225,22 +225,6 @@ body h4,h5,h6 {
     grid-row: span 6;
 }
 
-/* Inspired */
-.inspired-text {
-    background-color: hsl(141, 23%, 33%);
-    color: white;
-    text-align: center;
-    padding: 10px 0px;
-}
-
-.inspired-text h3 {
-    color: white !important;
-}
-
-.inspired-text h6 {
-    margin: 0;
-}
-
 @keyframes move-down{
 
     0% {
