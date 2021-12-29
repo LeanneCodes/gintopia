@@ -319,6 +319,33 @@ body h4,h5,h6 {
 }
 
 /* SignUp */
+.signup-container {
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+}
+
+.signup-container:before,
+.signup-container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.signup-container div {
+    float: left;
+    width: 47vw;
+    height: 100%;
+}
+
+.signup-container h4 {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.login {
+    margin-left: 50px;
+}
 
 /* for 4k screens size from 2560px wide and down */
 @media screen and (max-width: 2560px) {
@@ -337,16 +364,24 @@ body h4,h5,h6 {
     #bartender-slideshow {
         display: none;
     }
+
+    .signup-container div {
+        width: 47vw;
+    }
 }
 
 /* for larger screens size from 1920px wide and down */
 @media screen and (max-width: 1920px) {
-    
+    .signup-container div {
+        width: 45vw;
+    }
 }
 
 /* for larger screens size from 1440px wide and down */
 @media screen and (max-width: 1440px) {
-   
+    .signup-container div {
+        width: 45vw;
+    }
 }
 
 /* for larger to medium screens size from 1366px wide and down */
@@ -367,6 +402,10 @@ body h4,h5,h6 {
     .bartender {
         justify-content: space-between;
     }
+
+    .signup-container div {
+        width: 43vw;
+    }
 }
 
 /* for small to medium screens size from 800px wide and down */
@@ -383,12 +422,24 @@ body h4,h5,h6 {
     #slideshow {
         display: block;
     }
+
+    .signup-container div {
+        width: 41vw;
+    }
 }
 
 /* for small screens size from 575px wide and down */
 @media screen and (max-width: 575px) {
     .owl-carousel .owl-item .card .name {
         margin: auto;
+    }
+
+    .signup-container div {
+        width: 80vw;
+    }
+
+    .login {
+        margin-left: 0px;
     }
 }
 
@@ -410,7 +461,9 @@ body h4,h5,h6 {
 
 /* for small screens size from 390px wide and down */
 @media screen and (max-width: 390px) {
-    
+    .signup-container div {
+        width: 95vw;
+    }
 }
 
 /* for small screens size from 360px wide and down */

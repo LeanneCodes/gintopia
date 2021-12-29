@@ -49,32 +49,6 @@
     <h2>GinTopians Welcome</h2>
     <!-- Sign Up/Sign In -->
     <section class="signup-container">
-      <div class="signup">
-        <h4>New GinTopians Register Here</h4>
-        <div class="container">
-          <form action="index.php" method="post">
-            <div class="mb-3">
-              <label for="fname" class="form-label">First Name</label>
-              <input type="text" name="name" class="form-control" placeholder="Jane" required>
-            </div>
-            <div class="mb-3">
-              <label for="lname" class="form-label">Last Name</label>
-              <input type="text" name="name" class="form-control" placeholder="Doe" required>
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email address</label>
-              <input type="email" name="email" class="form-control" placeholder="jane@doe.com" required>
-            </div>
-            <div class="mb-3">
-              <label for="password" class="form-label">Password</label>
-              <input type="password" name="password" class="form-control" placeholder="" required>
-            </div>
-            <button type="submit" name="login_btn" class="btn btn-secondary">Register Account</button>
-          </form>
-          <br>
-          <p>Already Have an Account?<br><a class="register" href="assets/php/login.php">Login Instead</a></p>
-        </div>
-      </div>
       <div class="login">
         <h4>Existing GinTopians Sign In Here</h4>
         <div class="container">
@@ -90,7 +64,7 @@
             <button type="submit" name="login_btn" class="btn btn-secondary">Login</button>
           </form>
           <br>
-          <p>No Account?<br><a class="register" href="assets/php/register.php">Register Instead</a></p>
+          <p>No Account?<br><a class="register" href="register.php">Register Instead</a></p>
         </div>
       </div>
     </section>

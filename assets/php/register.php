@@ -72,25 +72,7 @@
             <button type="submit" name="login_btn" class="btn btn-secondary">Register Account</button>
           </form>
           <br>
-          <p>Already Have an Account?<br><a class="register" href="assets/php/login.php">Login Instead</a></p>
-        </div>
-      </div>
-      <div class="login">
-        <h4>Existing GinTopians Sign In Here</h4>
-        <div class="container">
-          <form action="index.php" method="post">
-            <div class="mb-3">
-              <label for="email" class="form-label">Email address</label>
-              <input type="email" name="email" class="form-control" placeholder="jane@doe.com" required>
-            </div>
-            <div class="mb-3">
-              <label for="password" class="form-label">Password</label>
-              <input type="password" name="password" class="form-control" placeholder="" required>
-            </div>
-            <button type="submit" name="login_btn" class="btn btn-secondary">Login</button>
-          </form>
-          <br>
-          <p>No Account?<br><a class="register" href="assets/php/register.php">Register Instead</a></p>
+          <p>Already Have an Account?<br><a class="register" href="index.php">Login Instead</a></p>
         </div>
       </div>
     </section>
