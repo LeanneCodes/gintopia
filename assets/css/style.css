@@ -68,31 +68,18 @@ body h4,h5,h6 {
     font-size: 1em !important;
 }
 
-/* Reviews */
-.blockquote {
-    text-align: center;
-}
-
-.blockquote p {
-    font-size: 0.8em !important;
-}
-
-.fa-star {
-    color: #967950
-}
-
-.quote {
-    margin: 20px 20px 0px;
-}
-
 /* Carousel Reviews */
+.fa-star {
+    color: #967950;
+}
+
 .section-owl-carousel {
     background-color: whitesmoke;
     min-height: 30vh
 }
 
 .owl-carousel .owl-item {
-    transition: all 0.3s ease-in-out
+    transition: all 0.6s ease-in-out
 }
 
 .owl-carousel .owl-item .card {
@@ -127,7 +114,7 @@ body h4,h5,h6 {
 .owl-carousel .owl-item .card {
     opacity: 0.2;
     transform: scale3d(0.8, 0.8, 0.8);
-    transition: all 0.3s ease-in-out
+    transition: all 0.6s ease-in-out
 }
 
 .owl-carousel .owl-item.active.center .card {
@@ -414,7 +401,9 @@ body h4,h5,h6 {
 
 /* for small screens size from 575px wide and down */
 @media screen and (max-width: 575px) {
-    
+    .owl-carousel .owl-item .card .name {
+        margin: auto;
+    }
 }
 
 /* for small screens size from 425px wide and down */
@@ -436,6 +425,13 @@ body h4,h5,h6 {
 /* for small screens size from 390px wide and down */
 @media screen and (max-width: 390px) {
     
+}
+
+/* for small screens size from 360px wide and down */
+@media(max-width: 360px) {
+    .owl-carousel .owl-item .card .name {
+        margin: auto;
+    }
 }
 
 /* for small screens size from 320px wide and down */
