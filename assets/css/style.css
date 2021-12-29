@@ -166,6 +166,18 @@ body h4,h5,h6 {
     grid-row: span 6;
 }
 
+/* Inspired */
+.inspired-text {
+    background-color: hsl(141, 23%, 33%);
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.inspired-text h3 {
+    color: white !important;
+}
+
 @keyframes move-down{
 
     0% {
@@ -241,9 +253,19 @@ body h4,h5,h6 {
     padding: 10px 60px;
 }
 
-.bartender-intro h3 {
+#bartender-heading {
     color: white !important;
     margin-top: 10px;
+    text-align: center;
+    background-color: #636363;
+    padding: 10px 20px;
+}
+
+#bartender-heading h3 {
+    color: white !important;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #636363;
 }
 
 .bartender-info {
@@ -262,6 +284,14 @@ body h4,h5,h6 {
     }
 
     #slideshow {
+        display: none;
+    }
+
+    .bartender-intro {
+        display: block;
+    }
+
+    #bartender-slideshow {
         display: none;
     }
 }
@@ -322,6 +352,14 @@ body h4,h5,h6 {
     .bartenders {
         grid-template-columns: auto;
         justify-content: space-evenly;
+    }
+
+    .bartender-intro {
+        display: none;
+    }
+
+    #bartender-slideshow {
+        display: block;
     }
 }
 
