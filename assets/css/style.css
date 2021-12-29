@@ -334,6 +334,8 @@ body h4,h5,h6 {
     min-height: 360px;
 }
 
+/* SignUp */
+
 /* for 4k screens size from 2560px wide and down */
 @media screen and (max-width: 2560px) {
     #flex-gallery {
