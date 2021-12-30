@@ -313,9 +313,31 @@ body h4,h5,h6 {
     padding-top: 2rem;
 }
 
-/* Google Map */
+/* Contact Us */
+.container-contact {
+    display: flex;
+}
+  
+.item-contact {
+    flex-basis: 50vw;
+    height: 60vh;
+    margin: 5px;
+}
+
+.parent {
+    height: 60vh;
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.child {
+    width: 50%;
+    height: 50%;
+}
+
 #map {
-    min-height: 360px;
+    min-height: 500px;
 }
 
 /* SignUp */

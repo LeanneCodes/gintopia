@@ -61,16 +61,17 @@
     </div>-->
     <!-- /.hero image -->
     <!-- Contact Us -->
-    <section class="container-fluid">
-      <div class="row bg-color-contact">
-          <div class="col">
-            <h3>Need some help?</h3>
+    <section>
+      <div class="container-contact">
+        <div class="row bg-color-contact item-contact parent-email">
+          <div class="col child-email">
+            <h3>Have a question?</h3>
             <h6 class="text-center">Send us an email today!</h6>
             <div class="center-form">
                 <form onsubmit ="return sendMail(this);"> 
                     <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
                     <input type="email" name="emailaddress" id="emailaddress" class="form-control" placeholder="Email" required />
-                    <textarea rows="5" name="ginbooking" id="ginbooking" class="form-control" placeholder="Gin Class Enquiry" required></textarea>
+                    <textarea rows="4" name="ginbooking" id="ginbooking" class="form-control" placeholder="Gin Class Enquiry" required></textarea>
                     <br>
                     <div class="form-row text-center">
                         <div class="col">
@@ -80,24 +81,20 @@
                 </form>
             </div>
           </div>
+        </div>
+        <div class="item-contact">
+          <iframe
+            width="100%"
+            height="100%"
+            style="border:0"
+            loading="lazy"
+            allowfullscreen
+            src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJldu7N84EdkgRiy39aFVBIFE&key=AIzaSyAMptgYoxpwQ5ZA-ztcsITFsTN3AGATTSM">
+          </iframe>
+        </div>
       </div>
     </section>
-    <!-- /.contact us -->
-    <hr>
-    <!-- Google Map -->
-    <section>
-      <div>
-        <iframe
-          width="100%"
-          height="400"
-          style="border:0"
-          loading="lazy"
-          allowfullscreen
-          src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJldu7N84EdkgRiy39aFVBIFE&key=AIzaSyAMptgYoxpwQ5ZA-ztcsITFsTN3AGATTSM">
-        </iframe>
-      </div>
-    </section>
-    <!-- /.google map -->
+    <!-- /.contact us --> 
     <hr>
     <!-- Footer -->
     <section>
