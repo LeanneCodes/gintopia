@@ -319,7 +319,7 @@ body h4,h5,h6 {
 }
 
 /* SignUp */
-#gintopia-signup {
+.gintopia-signup {
 	background: #f6f5f7;
     background-image: url("../images/five-gins-2560.png") !important;
     background-repeat: no-repeat;
@@ -521,6 +521,44 @@ h2 {
 	transform: translateX(20%);
 }
 
+.form-signup-mobile {
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+}
+
+.input-signup-mobile {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+}
+
+.container-su-mobile {
+	background-color: #fff;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 500px;
+	max-width: 100%;
+	min-height: 480px;
+}
+
+.form-container-su-mobile {
+	position: relative;
+	top: 0;
+	height: 50%;
+	padding: 30px 0px;
+}
+
 /* for 4k screens size from 2560px wide and down */
 @media screen and (max-width: 2560px) {
     #flex-gallery {
@@ -536,6 +574,14 @@ h2 {
     }
 
     #bartender-slideshow {
+        display: none;
+    }
+
+    .laptop-signup {
+        display: block;
+    }
+
+    .mobile-signup {
         display: none;
     }
 
@@ -579,11 +625,6 @@ h2 {
         grid-template-columns: auto auto auto;
         justify-content: space-evenly;
     }
-
-    #gintopia-signup {
-        background: #f6f5f7;
-        background-image: none !important;
-    }
 }
 
 /* for larger to medium screens size from 1024px wide and down */
@@ -612,8 +653,10 @@ h2 {
         display: block;
     }
 
-    .signup-container div {
-        width: 41vw;
+    .gintopia-signup {
+        background-image: none !important;
+        background-color: white;
+        height: 55vh;
     }
 }
 
@@ -631,15 +674,17 @@ h2 {
         margin-left: 0px;
     }
 
-    .container-su {
-        width: 500px;
-        min-height: 480px;
+    .laptop-signup {
+        display: none;
     }
-    
-    .form-container-su {
-        position: relative;
-        height: 50%;
-        padding-top: 30px;
+
+    .mobile-signup {
+        display: block;
+    }
+
+    .gintopia-signup {
+        background-image: none !important;
+        display: none;
     }
 }
 
