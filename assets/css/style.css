@@ -321,12 +321,15 @@ body h4,h5,h6 {
 /* SignUp */
 #gintopia-signup {
 	background: #f6f5f7;
+    background-image: url("../images/five-gins-2560.png") !important;
+    background-repeat: no-repeat;
+    background-position: center;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	font-family: 'Montserrat', sans-serif;
-	height: 60vh;
+	height: 75vh;
 	margin: 20px 0;
 }
 
@@ -396,15 +399,14 @@ h2 {
 }
 
 .container-su {
-	background-color: #fff;
-	border-radius: 10px;
-  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
-			0 10px 10px rgba(0,0,0,0.22);
-	position: relative;
-	overflow: hidden;
-	width: 768px;
-	max-width: 100%;
-	min-height: 480px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+    position: relative;
+    overflow: hidden;
+    width: 1500px;
+    max-width: 100%;
+    min-height: 880px;
 }
 
 .form-container-su {
@@ -547,12 +549,22 @@ h2 {
     .signup-container div {
         width: 45vw;
     }
+
+    .container-su {
+        width: 1000px;
+        min-height: 600px;
+    }
 }
 
 /* for larger screens size from 1440px wide and down */
 @media screen and (max-width: 1440px) {
     .signup-container div {
         width: 45vw;
+    }
+
+    .container-su {
+        width: 768px;
+        min-height: 480px;
     }
 }
 
@@ -566,6 +578,11 @@ h2 {
     .bartenders {
         grid-template-columns: auto auto auto;
         justify-content: space-evenly;
+    }
+
+    #gintopia-signup {
+        background: #f6f5f7;
+        background-image: none !important;
     }
 }
 
@@ -613,6 +630,16 @@ h2 {
     .login {
         margin-left: 0px;
     }
+
+    .container-su {
+        width: 500px;
+        min-height: 480px;
+    }
+    
+    .form-container-su {
+        position: relative;
+        height: 50%;
+        padding-top: 30px;
 }
 
 /* for small screens size from 425px wide and down */
@@ -643,9 +670,4 @@ h2 {
     .owl-carousel .owl-item .card .name {
         margin: auto;
     }
-}
-
-/* for small screens size from 320px wide and down */
-@media screen and (max-width: 320px) {
-    
 }
