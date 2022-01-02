@@ -315,25 +315,27 @@ body h4,h5,h6 {
 
 /* Contact Us */
 .container-contact {
-    display: flex;
-}
-  
-.item-contact {
-    flex-basis: 50vw;
-    height: 60vh;
-    margin: 5px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    padding: 10px;
 }
 
-.parent {
-    height: 60vh;
+.contact-items {
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
-    align-items: center !important;
-    justify-content: center !important;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content:center;
+    height: 73vh;
 }
 
-.child {
-    width: 50%;
-    height: 50%;
+.email {
+    width: 85%;
 }
 
 #map {
@@ -680,6 +682,15 @@ h2 {
         background-color: white;
         height: 55vh;
     }
+
+    .container-contact {
+        grid-template-columns: auto;
+    }
+    
+    .contact-items {
+        height: 40vh;
+    }
+
 }
 
 /* for small screens size from 575px wide and down */
