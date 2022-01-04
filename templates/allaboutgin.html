@@ -1,6 +1,5 @@
 {% extends "base.html" %}
 {% block content %}
-  <!-- /.gin introduction -->
   <hr>
   <!-- All About Gin -->
   <br>
@@ -8,7 +7,43 @@
   <p id="experts">Our editors have reached out to the gin-connoisseurs of the world and asked them, "What gins are ranked best in their category?" Lo and behold, they gave us their top ranked gins for each category, which makes our and your lives so much easier. They have done the hard work for us! Hopefully the list below helps you when it comes to making your favourite gin cocktails, with some quick fun-facts along the way. Cheers! <i class="fas fa-glass-cheers"></i></p>
   <br>
   <div class="container">
-    <div class="row">
+
+    {% for cocktail in gin %}
+
+    {% if loop.index % 3 != 0 %}
+
+      <div class="row">
+        <div class="col-md-4"><img src="{{ cocktail.image_source }}" alt="" width="100%" height="auto"></div>
+        <div class="col-md-8">
+          <p class="gin-rank">{{ cocktail.position }}</p>
+          <h4>{{ cocktail.name }}</h4>
+          <h6 class="best-for">{{ cocktail.category }}</h6>
+          <p class="price">{{ cocktail.price }}</p>
+          <p>{{ cocktail.wtb }}</p>
+          <a class="btn btn-secondary" target="_blank" href="{{ cocktail.url }}">Buy Now</a>
+          <br>
+          <br>
+          <p>{{ cocktail.description }}</p>
+        </div>
+      </div>
+      <br>
+
+      {% else %}
+        <div>
+          <div class="container-fluid quick-facts">
+            <i class="fas fa-cocktail"></i><h5>{{ cocktail.title }}</h5>
+            <p>{{ cocktail.fact }}</p>
+          </div>
+          <br>
+        </div>
+      
+      {% endif %}
+
+    {% endfor %}
+        
+  </div>
+
+    <!--<div class="row">
       <div class="col-md-4"><img src="static/images/bathtub-gin.png" alt="bathtub gin" width="95%" height="auto"></div>
       <div class="col-md-8">
         <p class="gin-rank">#1</p>
@@ -179,7 +214,6 @@
       </div>
     </div>
   </div>
-  <br>
+  <br>-->
   <!-- /.all about gin -->
-  <hr>
 {% endblock %}

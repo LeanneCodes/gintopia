@@ -248,12 +248,13 @@ body h4,h5,h6 {
     background-color: hsl(141, 23%, 33%);
     color: white;
     text-align: center;
+    margin-top: 2px;
+    padding-bottom: 2px;
 }
 
 .quick-facts p {
     color: white;
     text-align: center;
-    padding-bottom: 10px;
 }
 
 #experts {
