@@ -338,7 +338,7 @@ body h4,h5,h6 {
 	max-width: 642px;
 	width: 100%;
 	margin: auto;
-	padding: 40px 30px;
+	padding: 10px 20px;
 }
 
 .booking-form .form-group {
@@ -932,11 +932,11 @@ h2 {
     }
 
     .booking-cta h1 {
-        font-size: 2.8em;
+        font-size: 2.4em;
     }
     
     .booking-cta p {
-        font-size: 16px;
+        font-size: 1em;
     }
 }
 
