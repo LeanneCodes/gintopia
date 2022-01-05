@@ -115,6 +115,26 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.js"></script>
     <!-- Email JS -->
     <script src="static/js/sendEmail.js"></script>
+    <script src="static/js/jquery.min.js"></script>
+    <!-- Bootstrap Booking Form Template -->
+    <script>
+      $('.form-control').each(function () {
+        floatedLabel($(this));
+      });
+
+      $('.form-control').on('input', function () {
+        floatedLabel($(this));
+      });
+
+      function floatedLabel(input) {
+        var $field = input.closest('.form-group');
+        if (input.val()) {
+          $field.addClass('input-not-empty');
+        } else {
+          $field.removeClass('input-not-empty');
+        }
+      }
+    </script>
     <!-- Custom JS Script -->
     <script src="{{ url_for('static', filename='js/signUp.js') }}"></script>
     <script>

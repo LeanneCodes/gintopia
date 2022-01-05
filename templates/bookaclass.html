@@ -1,6 +1,90 @@
 {% extends "base.html" %}
 {% block content %}
-  <!-- Meet Your Bartenders -->
+  <hr>
+  <section>
+    <div id="booking" class="section-booking">
+      <div class="section-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5">
+              <div class="booking-cta">
+                <h1>Make your booking now</h1>
+                <p>Expect gin-tastic cocktails made by you and by our best-in-class bartenders.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-md-offset-1">
+              <div class="booking-form">
+                <form>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input class="form-control" type="text">
+                        <span class="form-label">Name</span>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input class="form-control" type="email">
+                        <span class="form-label">Email</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input class="form-control" type="tel">
+                        <span class="form-label">Phone</span>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input class="form-control" type="date" required>
+                        <span class="form-label">Date</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <span class="form-label">Attending</span>
+                        <select class="form-control">
+                          <option>1 Person</option>
+                          <option>2 People</option>
+                          <option>3 People</option>
+                          <option>4 People</option>
+                          <option>5 People</option>
+                          <option>6 People</option>
+                          <option>7 People</option>
+                          <option>8 People</option>
+                          <option>9 People</option>
+                          <option>10 People</option>
+                        </select>
+                        <span class="select-arrow"></span>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <span class="form-label">Booking Type</span>
+                        <select class="form-control">
+                          <option>Private</option>
+                          <option>Open</option>
+                        </select>
+                        <span class="select-arrow"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-btn">
+                    <button class="submit-btn">Book Now</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
   <section>
     <div id="bartender-heading">
       <h3>Meet Your Bartenders</h3>
@@ -13,12 +97,12 @@
     <div class="container">
       <div class="row">
         <div class="bartenders">
-          <span><img class="circle" src="static/images/bartender-1.png" alt="bartender 1"><br><p class="bartender-info">Jamie, 27<br>5 years of experience<br>Favourite gin cocktail:<br>Blackberry Gin</p></span>
-          <span><img class="circle" src="static/images/bartender-2.png" alt="bartender 2"><br><p class="bartender-info">Sarah, 29<br>4 years of experience<br>Favourite gin cocktail:<br>Gimlet Gin</p></span>
-          <span><img class="circle" src="static/images/bartender-3.png" alt="bartender 3"><br><p class="bartender-info">José, 33<br>10 years of experience<br>Favourite gin cocktail:<br>Gin Fizz</p></span>
-          <span><img class="circle" src="static/images/bartender-4.png" alt="bartender 4"><br><p class="bartender-info">Laurel, 30<br>6 years of experience<br>Favourite gin cocktail:<br>Classic Gin Martini</p></span>
-          <span><img class="circle" src="static/images/bartender-5.png" alt="bartender 5"><br><p class="bartender-info">Lawrence, 31<br>5 years of experience<br>Favourite gin cocktail:<br>Gin Sling</p></span>
-          <span><img class="circle" src="static/images/bartender-6.png" alt="bartender 6"><br><p class="bartender-info">Tolu, 28<br>4 years of experience<br>Favourite gin cocktail:<br>Tom Collins</p></span>
+          <span><img class="circle" src="static/images/bartender-1.png" alt="bartender 1"><br><p class="bartender-info"><strong>Jamie, 27</strong><br>5 years of experience<br>Favourite gin cocktail:<br>Blackberry Gin</p></span>
+          <span><img class="circle" src="static/images/bartender-2.png" alt="bartender 2"><br><p class="bartender-info"><strong>Sarah, 29</strong><br>4 years of experience<br>Favourite gin cocktail:<br>Gimlet Gin</p></span>
+          <span><img class="circle" src="static/images/bartender-3.png" alt="bartender 3"><br><p class="bartender-info"><strong>José, 33</strong><br>10 years of experience<br>Favourite gin cocktail:<br>Gin Fizz</p></span>
+          <span><img class="circle" src="static/images/bartender-4.png" alt="bartender 4"><br><p class="bartender-info"><strong>Laurel, 30</strong><br>6 years of experience<br>Favourite gin cocktail:<br>Classic Gin Martini</p></span>
+          <span><img class="circle" src="static/images/bartender-5.png" alt="bartender 5"><br><p class="bartender-info"><strong>Lawrence, 31</strong><br>5 years of experience<br>Favourite gin cocktail:<br>Gin Sling</p></span>
+          <span><img class="circle" src="static/images/bartender-6.png" alt="bartender 6"><br><p class="bartender-info"><strong>Tolu, 28</strong><br>4 years of experience<br>Favourite gin cocktail:<br>Tom Collins</p></span>
         </div>
       </div>
     </div>
@@ -63,6 +147,4 @@
         </button>
     </div>
   </section>
-  <!-- /.meet your bartenders -->
-  <hr>
 {% endblock %}
