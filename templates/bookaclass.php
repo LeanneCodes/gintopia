@@ -8,13 +8,13 @@
           <div class="row">
             <div class="col-md-5">
               <div class="booking-cta">
-                <h1>Reserve your space now</h1>
+                <h1>Reserve your space</h1>
                 <p>Expect gin-tastic cocktails made by you and by our best-in-class bartenders.</p>
               </div>
             </div>
             <div class="col-md-6 col-md-offset-1">
               <div class="booking-form">
-                <form action="insert.php" target="_blank" method="POST">
+                <form action="insert.php" method="POST" target="_blank">
                   <div class="row">
                     <div class="col-md-6">
                       <div class="form-group">
@@ -46,17 +46,36 @@
                   <div class="row">
                     <div class="col-md-6">
                       <div class="form-group">
-                        <input class="form-control" type="number" id="quantity" name="party" min="1" max="10" required>
-                        <span class="form-label">Party Size</span>
+                      <span class="form-label">No. of People</span>
+                          <select class="form-control">
+                            <option>1 Person</option>
+                            <option>2 People</option>
+                            <option>3 People</option>
+                            <option>4 People</option>
+                            <option>5 People</option>
+                            <option>6 People</option>
+                            <option>7 People</option>
+                            <option>8 People</option>
+                            <option>9 People</option>
+                            <option>10 People</option>
+                          </select>
+                        <span class="select-arrow"></span>
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
-                      <input class="form-control" type="time" name="time" min="13" max="21" required>
-                        <span class="form-label">Time</span>
+                        <span class="form-label">Class Time</span>
+                          <select class="form-control">
+                            <option>13:00</option>
+                            <option>15:00</option>
+                            <option>17:00</option>
+                            <option>19:00</option>
+                            <option>21:00</option>
+                          </select>
+                        <span class="select-arrow"></span>
                       </div>
                     </div>
-                    <p class="text-center"><strong>Note:</strong>Classes are 2 hours long and start from 1pm and last class is at 9pm</p>
+                    <p class="text-center"><strong>Note: </strong>Classes are 2 hours long and start from 13:00. Last class is at 21:00</p>
                   </div>
                   <div class="form-btn">
                     <button class="submit-btn">Book Now</button>
