@@ -24,7 +24,7 @@ def allaboutgin():
 
 @app.route("/bookaclass")
 def bookaclass():
-    return render_template("bookaclass.html")
+    return render_template("bookaclass.php")
 
 
 @app.route("/contactus", methods=["GET", "POST"])

@@ -8,23 +8,23 @@
           <div class="row">
             <div class="col-md-5">
               <div class="booking-cta">
-                <h1>Make your booking now</h1>
+                <h1>Reserve your space now</h1>
                 <p>Expect gin-tastic cocktails made by you and by our best-in-class bartenders.</p>
               </div>
             </div>
             <div class="col-md-6 col-md-offset-1">
               <div class="booking-form">
-                <form>
+                <form action="insert.php" target="_blank" method="POST">
                   <div class="row">
                     <div class="col-md-6">
                       <div class="form-group">
-                        <input class="form-control" type="text">
+                        <input class="form-control" type="text" name="name" required>
                         <span class="form-label">Name</span>
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
-                        <input class="form-control" type="email">
+                        <input class="form-control" type="email" name="email" required>
                         <span class="form-label">Email</span>
                       </div>
                     </div>
@@ -32,13 +32,13 @@
                   <div class="row">
                     <div class="col-md-6">
                       <div class="form-group">
-                        <input class="form-control" type="tel">
+                        <input class="form-control" type="tel" name="phone" required>
                         <span class="form-label">Phone</span>
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
-                        <input class="form-control" type="date" required>
+                        <input class="form-control" type="date" name="date" required>
                         <span class="form-label">Date</span>
                       </div>
                     </div>
@@ -46,32 +46,17 @@
                   <div class="row">
                     <div class="col-md-6">
                       <div class="form-group">
-                        <span class="form-label">Attending</span>
-                        <select class="form-control">
-                          <option>1 Person</option>
-                          <option>2 People</option>
-                          <option>3 People</option>
-                          <option>4 People</option>
-                          <option>5 People</option>
-                          <option>6 People</option>
-                          <option>7 People</option>
-                          <option>8 People</option>
-                          <option>9 People</option>
-                          <option>10 People</option>
-                        </select>
-                        <span class="select-arrow"></span>
+                        <input class="form-control" type="number" id="quantity" name="party" min="1" max="10" required>
+                        <span class="form-label">Party Size</span>
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
-                        <span class="form-label">Booking Type</span>
-                        <select class="form-control">
-                          <option>Private</option>
-                          <option>Open</option>
-                        </select>
-                        <span class="select-arrow"></span>
+                      <input class="form-control" type="time" name="time" min="13" max="21" required>
+                        <span class="form-label">Time</span>
                       </div>
                     </div>
+                    <p class="text-center"><strong>Note:</strong>Classes are 2 hours long and start from 1pm and last class is at 9pm</p>
                   </div>
                   <div class="form-btn">
                     <button class="submit-btn">Book Now</button>
