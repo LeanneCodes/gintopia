@@ -13,7 +13,7 @@
                 <p class="lead card-text">Learn how to make your favourite<br>gin-based drinks with us!*
                     <span class="d-inline d-sm-none"><br></span>
                     <br>
-                <a href="{{ url_for('booking_form') }}" class="cta-btn btn btn-light stretched-link">Book Now</a>
+                <a href="{% url 'booking_form' %}" class="cta-btn btn btn-light stretched-link">Book Now</a>
                 <p class="disclaimer"><small>*You must be at least 18 years old<br>to book a class with us.</small></p>
             </section>
         </div>
@@ -27,7 +27,7 @@
     <div class="owl-carousel owl-theme mt-2">
       <div class="owl-item">
           <div class="card">
-              <div class="img-card"> <img src="static/images/cust-a.jpg" alt="Marie"> </div>
+              <div class="img-card"> <img src="{% static 'images/cust-a.jpg' %}" alt="Marie"> </div>
               <div class="testimonial mt-4 mb-2"> "I hosted a dinner party and used some of the great techniques that I learnt from this class and my guests loved the gin cocktails! They said it was better than the drinks they get from their local pub." </div>
               <div>
                 <span class="fa fa-star checked"></span>
@@ -97,7 +97,7 @@
       <div class="owl-item">
           <div class="card">
               <div class="img-card"> <img src="static/images/cust-k.jpg" alt="Jason"> </div>
-              <div class="testimonial mt-4 mb-2"> "It was great that GinTopia were able to hold private bookings, as I was able to take my clients to this class. I might even see a promotion because of how well it went!" </div>
+              <div class="testimonial mt-4 mb-2"> "It was great! I emailed GinTopia in advance to ask if I could host a private event here and they said YES! Took my clients here, who came from overseas and they loved it. I might even see a promotion because of how well it went!" </div>
               <div>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
@@ -144,7 +144,7 @@
       <div class="gallery-image-containers w-2 h-3">
         <div class="gallery-items">
           <div class="gin-image">
-            <img src="static/images/gunpowder-irish-gin.jpg" alt="gin-alcohol">
+            <img src="{% static 'images/gunpowder-irish-gin' %}" alt="gin-alcohol">
           </div>
         </div>
       </div>
@@ -206,7 +206,7 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="static/images/gunpowder-irish-gin.jpg" class="d-block w-100" alt="gunpowder irish gin bottle">
+            <img src="{% static 'images/gunpowder-irish-gin' %}" class="d-block w-100" alt="gunpowder irish gin bottle">
           </div>
           <div class="carousel-item">
             <img src="static/images/beige-gin-with-toppings.jpg" class="d-block w-100" alt="beige-coloured gin drink">
