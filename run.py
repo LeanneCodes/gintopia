@@ -22,9 +22,24 @@ def allaboutgin():
     return render_template("allaboutgin.html", gin=data)
 
 
-@app.route("/bookaclass")
-def bookaclass():
-    return render_template("bookaclass.php")
+@app.route("/booking_type")
+def booking_type():
+    return render_template("booking_type.html")
+
+
+@app.route("/booking_private")
+def booking_private():
+    return render_template("booking_private.html")
+
+
+@app.route("/booking_open")
+def booking_open():
+    return render_template("booking_open.html")
+
+
+@app.route("/booking_confirmed")
+def booking_confirmed():
+    return render_template("booking_confirmed.html")
 
 
 @app.route("/contactus", methods=["GET", "POST"])

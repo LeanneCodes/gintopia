@@ -6,7 +6,7 @@
       <div class="section-center">
         <div class="container">
           <div class="row">
-            <div class="col-md-5">
+            <div class="col-md-5 booking-cta-container">
               <div class="booking-cta">
                 <h1>Reserve your space</h1>
                 <p>Expect gin-tastic cocktails made by you and by our best-in-class bartenders.</p>
@@ -14,7 +14,7 @@
             </div>
             <div class="col-md-6 col-md-offset-1">
               <div class="booking-form">
-                <form action="insert.php" method="POST" target="_blank">
+                <form>
                   <div class="row">
                     <div class="col-md-6">
                       <div class="form-group">
@@ -78,7 +78,7 @@
                     <p class="text-center"><strong>Note: </strong>Classes are 2 hours long and start from 13:00. Last class is at 21:00</p>
                   </div>
                   <div class="form-btn">
-                    <button class="submit-btn">Book Now</button>
+                    <button class="submit-btn"><a style="text-decoration: none; color: white;" href="{{ url_for('booking_confirmed') }}">Book Now</a></button>
                   </div>
                   <br>
                   <div>

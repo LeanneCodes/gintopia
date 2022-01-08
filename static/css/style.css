@@ -6,6 +6,7 @@
 /* Main body design */
 body {
     margin: 15px !important;
+    min-height: 100vh;
 }
 
 body p {
@@ -315,8 +316,47 @@ body h4,h5,h6 {
     background: rgba(255, 255, 255, 0.7)
 }
 
+.section-booking-type {
+	position: relative;
+	height: 70vh;
+}
+
+.booking-type {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("../images/bg-1.png");
+	background-color: #d3b488;
+	background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 5px;
+    padding: 120px;
+}
+
+.booking-type::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+    background: rgba(255, 255, 255, 0.7)
+}
+
 .booking-cta {
-	margin-top: 45px;
+	margin: 40px;
+}
+
+.booking-cta-container {
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content:center;
 }
 
 .booking-cta h1 {
@@ -407,7 +447,7 @@ body h4,h5,h6 {
 	display: block;
 	-webkit-transform: rotate(90deg);
 	transform: rotate(90deg);
-}
+} 
 
 .booking-form .form-label {
 	color: rgba(0, 0, 0, 0.2);
