@@ -489,6 +489,10 @@ body h4,h5,h6 {
 	text-transform: capitalize;
 }
 
+.container-confirmed {
+    min-height: 100vh;
+}
+
 .bartenders {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
